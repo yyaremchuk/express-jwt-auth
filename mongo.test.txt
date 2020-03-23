@@ -1,0 +1,8 @@
+curl -X POST -H "Content-type: application/json" http://localhost:3000/contact \
+-d '{"firstName": "name", "lastName": "last", "email": "to@email.com", "company": "Comp", "phone": "1234567"}'
+
+// login
+curl -X POST -H "Content-type: application/json" http://localhost:3000/login \
+-d '{"email": "to@email.com", "password": "test"}'
+
+url -X GET -H "Content-type: application/json" http://localhost:3000/profile
